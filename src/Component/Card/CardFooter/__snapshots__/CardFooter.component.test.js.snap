@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardFooter snapshot should match 1`] = `
+<div
+  className="cardFooter"
+>
+  <div>
+    <p
+      className="rating"
+    />
+  </div>
+  <div
+    className="heartImage"
+  >
+    <img
+      alt="heart-black"
+      className="heart"
+      onClick={[Function]}
+      src={
+        Object {
+          "ReactComponent": [Function],
+          "__esModule": true,
+          "default": "heart-red.svg",
+        }
+      }
+    />
+  </div>
+</div>
+`;

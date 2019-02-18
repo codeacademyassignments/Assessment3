@@ -1,0 +1,7 @@
+.cardBoundBox{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 6px solid orange;
+    border-radius: 47px;
+}

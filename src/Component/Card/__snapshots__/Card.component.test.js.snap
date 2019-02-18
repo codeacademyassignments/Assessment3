@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Section snapshot should match 1`] = `
+<article
+  className="article"
+>
+  <div
+    className="img"
+    style={
+      Object {
+        "backgroundImage": "url(cover_image.jpeg)",
+      }
+    }
+  />
+  <p
+    className="title"
+  >
+    Harry Potter and the Sorcerers Stone (Harry Potter, #1)
+  </p>
+  <div
+    className="cardFooter"
+  >
+    <div>
+      <p
+        className="rating"
+      >
+        4.45
+      </p>
+    </div>
+    <div
+      className="heartImage"
+    >
+      <img
+        alt="heart-black"
+        className="heart"
+        onClick={[Function]}
+        src={
+          Object {
+            "ReactComponent": [Function],
+            "__esModule": true,
+            "default": "heart-red.svg",
+          }
+        }
+      />
+    </div>
+  </div>
+</article>
+`;

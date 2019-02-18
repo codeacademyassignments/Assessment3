@@ -1,0 +1,16 @@
+
+.heart{
+  width:100%;
+}
+
+.heartImage{
+  align-self: center;
+  width:10%;
+}
+.cardFooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0% 4%;
+
+}
