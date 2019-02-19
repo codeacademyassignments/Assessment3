@@ -1,18 +1,19 @@
-.img {
-  position: relative;
+.bookImage {
   width:  100%;
   height: 303px;
-  background-position: 50% 50%;
   background-repeat:   no-repeat;
   background-size:     cover;
 }
-.title{
+.bookTitle{
   text-align: center;
   padding: 0% 9%;
 }
 
-.article{
-  width:30%;
-  margin: 2% 0%;
+.book{
+  width:350px;
+  margin: 2% 1%;
   background-color: orange;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

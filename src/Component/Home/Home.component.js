@@ -1,68 +1,62 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import PropTypes from 'prop-types';
 import Header from '../Header/Header.component';
-import Section from '../Section/Section.component';
-import testData from '../../TestData/TestData';
+import BookGroupByAuthor from '../BookGroupByAuthor/BookGroupByAuthor.component';
 import './Home.component.css';
+import BookGroupByAuthorHandler from '../../Handler/BooksGroupByAuthor';
 
-
-// import ReactDOM from 'react-dom';
-// import RawData from '../../RawData/RawData';
+// const BookGroupByAuthorHandler = require('../../Handler/BooksGroupByAuthor');
 
 class Home extends Component {
   componentDidMount() {
-    const { onDataStoreComplete, onDataFetched, fetchState } = this.props;
-    if (!fetchState) {
-      const allBookGroupByAuthor = axios.get('http://localhost:8080/allBooksWithRating');
+    const { books, onDataFetched } = this.props;
+    if (Object.keys(books).length === 0) {
+      const allBookGroupByAuthor = BookGroupByAuthorHandler();
       return allBookGroupByAuthor.then((response) => {
         onDataFetched(response.data);
-        onDataStoreComplete();
       });
     }
     return {};
   }
 
+  bookGroupByAuthor = (books) => {
+    const bookGroupByAuthorComponentRows = [];
+    Object.keys(books).forEach((author) => {
+      bookGroupByAuthorComponentRows.push(<BookGroupByAuthor key={author} books={books[author]} author={author} />);
+    });
+    return bookGroupByAuthorComponentRows;
+  }
+
   render() {
-    const { blogs } = this.props;
-    // console.log('here..', blogs);
-    if (Object.keys(blogs).length === 0) return (<></>);
+    const { books } = this.props;
+    if (Object.keys(books).length === 0) return (<></>);
     return (
       <section className="rootSection">
         <Header />
         <section className="mainBlock">
-          <Section cards={blogs['J K Rowling']} author="J K Rowling" />
-          <Section cards={blogs['Sidney Sheldon']} author="Sidney Sheldon" />
+          {this.bookGroupByAuthor(books)}
         </section>
       </section>
     );
   }
-
-
-  // componentDidUpdate(prevProps) {
-  //   console.log('component updated', prevProps);
-  // }
 }
 
 Home.propTypes = {
-  blogs: PropTypes.arrayOf(
+  books: PropTypes.objectOf(PropTypes.arrayOf(
     PropTypes.shape({
-      date: PropTypes.string.isRequired,
-      readingTime: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
-      liked: PropTypes.bool.isRequired,
-      claps: PropTypes.number.isRequired,
-      image: PropTypes.string,
+      Author: PropTypes.string.isRequired,
+      Name: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
+      rating: PropTypes.number.isRequired,
+      liked: PropTypes.bool,
     }),
-  ),
-  onDataStoreComplete: PropTypes.func.isRequired,
+  )),
   onDataFetched: PropTypes.func.isRequired,
-  fetchState: PropTypes.bool.isRequired,
 };
 
+
 Home.defaultProps = {
-  blogs: [],
+  books: {},
 };
 
 

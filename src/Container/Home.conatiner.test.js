@@ -29,7 +29,7 @@ describe('mapDispatchToProps', () => {
     expect(HomeContainer.length).toBeTruthy();
   });
   it('should map dispatches to props', () => {
-    const expectedAttributes = ['onDataStoreComplete', 'onDataFetched'];
+    const expectedAttributes = ['onDataFetched'];
     expect(Object.keys(HomeComponentWrapper.props())).toEqual(
       expect.arrayContaining(expectedAttributes),
     );
@@ -40,8 +40,10 @@ describe('mapStateToProps', () => {
   const wrapper = mount(<Provider store={store}><HomeContainer /></Provider>);
   const HomeContainerWrapper = wrapper.find(HomeContainer);
   const HomeComponentWrapper = HomeContainerWrapper.find(HomeComponent);
-  const expectedAttributes = ['blogs', 'fetchState'];
-  expect(Object.keys(HomeComponentWrapper.props())).toEqual(
-    expect.arrayContaining(expectedAttributes),
-  );
+  const expectedAttributes = ['books'];
+  it('should map global store as props', () => {
+    expect(Object.keys(HomeComponentWrapper.props())).toEqual(
+      expect.arrayContaining(expectedAttributes),
+    );
+  });
 });

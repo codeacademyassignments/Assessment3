@@ -1,0 +1,325 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Section snapshot should match 1`] = `
+<section
+  className="cardBoundBox"
+>
+  <div
+    className="authorName"
+  >
+    J K Rowling
+  </div>
+  <section
+    className="cardsByAuthor"
+  >
+    <article
+      className="book"
+    >
+      <div
+        className="bookImage"
+        style={
+          Object {
+            "backgroundImage": "url(cover_image.jpeg)",
+          }
+        }
+      />
+      <p
+        className="bookTitle"
+      >
+        Harry Potter and the Sorcerers Stone (Harry Potter, #1)
+      </p>
+      <div
+        className="cardFooter"
+      >
+        <div>
+          <p
+            className="rating"
+          >
+            4.45
+          </p>
+        </div>
+        <div
+          className="heartImage"
+        >
+          <img
+            alt="heart-black"
+            className="heart"
+            onClick={[Function]}
+            src={
+              Object {
+                "ReactComponent": [Function],
+                "__esModule": true,
+                "default": "heart-white.svg",
+              }
+            }
+          />
+        </div>
+      </div>
+    </article>
+    <article
+      className="book"
+    >
+      <div
+        className="bookImage"
+        style={
+          Object {
+            "backgroundImage": "url(cover_image.jpeg)",
+          }
+        }
+      />
+      <p
+        className="bookTitle"
+      >
+        Harry Potter and the Chamber of Secrets (Harry Potter, #2)
+      </p>
+      <div
+        className="cardFooter"
+      >
+        <div>
+          <p
+            className="rating"
+          >
+            4.38
+          </p>
+        </div>
+        <div
+          className="heartImage"
+        >
+          <img
+            alt="heart-black"
+            className="heart"
+            onClick={[Function]}
+            src={
+              Object {
+                "ReactComponent": [Function],
+                "__esModule": true,
+                "default": "heart-white.svg",
+              }
+            }
+          />
+        </div>
+      </div>
+    </article>
+    <article
+      className="book"
+    >
+      <div
+        className="bookImage"
+        style={
+          Object {
+            "backgroundImage": "url(cover_image.jpeg)",
+          }
+        }
+      />
+      <p
+        className="bookTitle"
+      >
+        Harry Potter and the Prisoner of Azkaban (Harry Potter, #3)
+      </p>
+      <div
+        className="cardFooter"
+      >
+        <div>
+          <p
+            className="rating"
+          >
+            4.54
+          </p>
+        </div>
+        <div
+          className="heartImage"
+        >
+          <img
+            alt="heart-black"
+            className="heart"
+            onClick={[Function]}
+            src={
+              Object {
+                "ReactComponent": [Function],
+                "__esModule": true,
+                "default": "heart-white.svg",
+              }
+            }
+          />
+        </div>
+      </div>
+    </article>
+    <article
+      className="book"
+    >
+      <div
+        className="bookImage"
+        style={
+          Object {
+            "backgroundImage": "url(cover_image.jpeg)",
+          }
+        }
+      />
+      <p
+        className="bookTitle"
+      >
+        Harry Potter and the Goblet of Fire (Harry Potter, #4)
+      </p>
+      <div
+        className="cardFooter"
+      >
+        <div>
+          <p
+            className="rating"
+          >
+            4.53
+          </p>
+        </div>
+        <div
+          className="heartImage"
+        >
+          <img
+            alt="heart-black"
+            className="heart"
+            onClick={[Function]}
+            src={
+              Object {
+                "ReactComponent": [Function],
+                "__esModule": true,
+                "default": "heart-white.svg",
+              }
+            }
+          />
+        </div>
+      </div>
+    </article>
+    <article
+      className="book"
+    >
+      <div
+        className="bookImage"
+        style={
+          Object {
+            "backgroundImage": "url(cover_image.jpeg)",
+          }
+        }
+      />
+      <p
+        className="bookTitle"
+      >
+        Harry Potter and the Order of the Phoenix (Harry Potter, #5)
+      </p>
+      <div
+        className="cardFooter"
+      >
+        <div>
+          <p
+            className="rating"
+          >
+            4.47
+          </p>
+        </div>
+        <div
+          className="heartImage"
+        >
+          <img
+            alt="heart-black"
+            className="heart"
+            onClick={[Function]}
+            src={
+              Object {
+                "ReactComponent": [Function],
+                "__esModule": true,
+                "default": "heart-white.svg",
+              }
+            }
+          />
+        </div>
+      </div>
+    </article>
+    <article
+      className="book"
+    >
+      <div
+        className="bookImage"
+        style={
+          Object {
+            "backgroundImage": "url(cover_image.jpeg)",
+          }
+        }
+      />
+      <p
+        className="bookTitle"
+      >
+        Harry Potter and the Half-Blood Prince (Harry Potter, #6)
+      </p>
+      <div
+        className="cardFooter"
+      >
+        <div>
+          <p
+            className="rating"
+          >
+            4.54
+          </p>
+        </div>
+        <div
+          className="heartImage"
+        >
+          <img
+            alt="heart-black"
+            className="heart"
+            onClick={[Function]}
+            src={
+              Object {
+                "ReactComponent": [Function],
+                "__esModule": true,
+                "default": "heart-white.svg",
+              }
+            }
+          />
+        </div>
+      </div>
+    </article>
+    <article
+      className="book"
+    >
+      <div
+        className="bookImage"
+        style={
+          Object {
+            "backgroundImage": "url(cover_image.jpeg)",
+          }
+        }
+      />
+      <p
+        className="bookTitle"
+      >
+        Harry Potter and the Deathly Hallows (Harry Potter, #7)
+      </p>
+      <div
+        className="cardFooter"
+      >
+        <div>
+          <p
+            className="rating"
+          >
+            4.62
+          </p>
+        </div>
+        <div
+          className="heartImage"
+        >
+          <img
+            alt="heart-black"
+            className="heart"
+            onClick={[Function]}
+            src={
+              Object {
+                "ReactComponent": [Function],
+                "__esModule": true,
+                "default": "heart-white.svg",
+              }
+            }
+          />
+        </div>
+      </div>
+    </article>
+  </section>
+</section>
+`;

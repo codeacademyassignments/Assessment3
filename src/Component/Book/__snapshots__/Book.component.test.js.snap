@@ -2,10 +2,10 @@
 
 exports[`Section snapshot should match 1`] = `
 <article
-  className="article"
+  className="book"
 >
   <div
-    className="img"
+    className="bookImage"
     style={
       Object {
         "backgroundImage": "url(cover_image.jpeg)",
@@ -13,7 +13,7 @@ exports[`Section snapshot should match 1`] = `
     }
   />
   <p
-    className="title"
+    className="bookTitle"
   >
     Harry Potter and the Sorcerers Stone (Harry Potter, #1)
   </p>

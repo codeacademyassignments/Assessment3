@@ -1,30 +1,20 @@
 import { combineReducers } from 'redux';
 
 const {
-  SET_STATE, INITIALIZE_STATE,
+  INITIALIZE_STATE,
 } = require('../Actions/BookLibrary.action');
 
-const fetchState = (state = false, action) => {
-  switch (action.type) {
-    case SET_STATE:
-      return !state;
-    default:
-      return state;
-  }
-};
-
-const blogs = (state = {}, action) => {
+const books = (state = {}, action) => {
   switch (action.type) {
     case INITIALIZE_STATE:
-      return action.blogs;
+      return action.books;
     default:
       return state;
   }
 };
 
 const libraryApp = combineReducers({
-  fetchState,
-  blogs,
+  books,
 });
 
 export default libraryApp;

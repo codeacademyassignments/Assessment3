@@ -1,22 +1,15 @@
 import { connect } from 'react-redux';
 import Home from '../Component/Home/Home.component';
-import { setState, initializeState } from '../Actions/BookLibrary.action';
+import { initializeState } from '../Actions/BookLibrary.action';
 
 
 const mapStateToProps = state => ({
-  blogs: state.blogs,
-  fetchState: state.fetchState,
+  books: state.books,
 });
 
 const mapDispatchToProps = dispatch => ({
-  onDataFetched: (blogs) => {
-    // blogs.forEach((blog) => {
-    //   dispatch(addBlog(blog));
-    // });
-    dispatch(initializeState(blogs));
-  },
-  onDataStoreComplete: () => {
-    dispatch(setState());
+  onDataFetched: (books) => {
+    dispatch(initializeState(books));
   },
 });
 const Cards = connect(

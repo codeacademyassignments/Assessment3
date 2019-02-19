@@ -1,7 +1,14 @@
 .mainBlock{
   margin: 0% 10%;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .rootSection{
   background-color: grey;
+  min-width: 384px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

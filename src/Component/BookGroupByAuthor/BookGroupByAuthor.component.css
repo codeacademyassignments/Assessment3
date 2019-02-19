@@ -1,0 +1,30 @@
+.cardBoundBox{
+  display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    padding-bottom: 34px;
+    min-width: 350px;
+    justify-content: space-around;
+    align-items: center;
+    border: 6px solid orange;
+    border-radius: 47px;
+    margin: 3% 0%;
+
+}
+.cardsByAuthor{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-width: 350px;
+}
+.authorName{
+  color: orange;
+  font-size: 29px;
+  background-color: white;
+  border-radius: 7%;
+  padding: 9px 50px;
+  z-index: 30;
+  font-weight: bold;
+  position: relative;
+  bottom: 28px;
+}

@@ -1,9 +1,9 @@
 import React from 'react';
-import './CardFooter.component.css';
+import './BookFooter.component.css';
+import PropTypes from 'prop-types';
 
 const CardFooter = (props) => {
-  const heartUrl = props.liked ? 'heart-red.svg' : 'heart-black.svg';
-  console.log(props);
+  const heartUrl = props.liked ? 'heart-red.svg' : 'heart-white.svg';
   return (
     <div className="cardFooter">
       <div>
@@ -15,7 +15,6 @@ const CardFooter = (props) => {
           alt="heart-black"
           className="heart"
           onClick={() => {
-            alert('clicked');
             props.onHeartClick(props.liked);
           }}
         />
@@ -24,8 +23,9 @@ const CardFooter = (props) => {
   );
 };
 
-CardFooter.defaultProps = {
-  liked: false,
+CardFooter.propTypes = {
+  rating: PropTypes.number.isRequired,
+  liked: PropTypes.bool.isRequired,
 };
 
 export default CardFooter;

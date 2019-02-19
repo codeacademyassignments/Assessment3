@@ -1,13 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CardFooter snapshot should match 1`] = `
+exports[`BookFooter snapshot should match 1`] = `
 <div
   className="cardFooter"
 >
   <div>
     <p
       className="rating"
-    />
+    >
+      4.3
+    </p>
   </div>
   <div
     className="heartImage"

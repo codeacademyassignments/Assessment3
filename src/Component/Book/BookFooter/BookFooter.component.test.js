@@ -1,19 +1,19 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
-import CardFooter from './CardFooter.component';
+import BookFooter from './BookFooter.component';
 
 
-describe('CardFooter', () => {
+describe('BookFooter', () => {
   it('snapshot should match', () => {
-    const tree = renderer.create(<CardFooter liked title="Harry Potter and prisoner of azekaban" />);
+    const tree = renderer.create(<BookFooter liked title="Harry Potter and prisoner of azekaban" rating={4.3} />);
     expect(tree).toMatchSnapshot();
   });
 });
 
 describe('mock function', () => {
   const onHeartClickMock = jest.fn();
-  const wrapper = shallow(<CardFooter liked rating={4.5} onHeartClick={onHeartClickMock} />);
+  const wrapper = shallow(<BookFooter liked rating={4.5} onHeartClick={onHeartClickMock} />);
   it('should call onHeartClickMock when heart clicked', () => {
     wrapper.find('.heart').simulate('click');
     expect(onHeartClickMock).toHaveBeenCalledWith(true);
