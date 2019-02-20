@@ -6,11 +6,12 @@ import BookFooter from './BookFooter/BookFooter.component';
 
 class Book extends Component {
   render() {
+    const styleForBook = this.props.index % 2 === 0 ? 'bookOnEvenIndex' : 'bookOnOddIndex';
     return (
-      <article className="book">
+      <article className={styleForBook}>
         <div className="bookImage" style={{ backgroundImage: `url(${image})` }} />
         <p className="bookTitle">{this.props.title}</p>
-        <BookFooter rating={this.props.rating} bookId={this.props.bookId} liked={this.props.liked} onHeartClick={(data) => { }} />
+        <BookFooter rating={this.props.rating} bookId={this.props.bookId} liked={this.props.liked} onHeartClick={(data) => { }} index={this.props.index} />
       </article>
     );
   }
@@ -21,10 +22,12 @@ Book.propTypes = {
   rating: PropTypes.number.isRequired,
   bookId: PropTypes.number.isRequired,
   liked: PropTypes.bool,
+  index: PropTypes.number,
 };
 
 Book.defaultProps = {
   liked: false,
+  index: 0,
 };
 
 export default Book;

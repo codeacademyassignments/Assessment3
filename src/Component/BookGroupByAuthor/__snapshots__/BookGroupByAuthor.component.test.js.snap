@@ -13,7 +13,7 @@ exports[`Section snapshot should match 1`] = `
     className="cardsByAuthor"
   >
     <article
-      className="book"
+      className="bookOnEvenIndex"
     >
       <div
         className="bookImage"
@@ -57,7 +57,7 @@ exports[`Section snapshot should match 1`] = `
       </div>
     </article>
     <article
-      className="book"
+      className="bookOnOddIndex"
     >
       <div
         className="bookImage"
@@ -93,7 +93,7 @@ exports[`Section snapshot should match 1`] = `
               Object {
                 "ReactComponent": [Function],
                 "__esModule": true,
-                "default": "heart-white.svg",
+                "default": "heart-black.svg",
               }
             }
           />
@@ -101,7 +101,7 @@ exports[`Section snapshot should match 1`] = `
       </div>
     </article>
     <article
-      className="book"
+      className="bookOnEvenIndex"
     >
       <div
         className="bookImage"
@@ -145,7 +145,7 @@ exports[`Section snapshot should match 1`] = `
       </div>
     </article>
     <article
-      className="book"
+      className="bookOnOddIndex"
     >
       <div
         className="bookImage"
@@ -181,7 +181,7 @@ exports[`Section snapshot should match 1`] = `
               Object {
                 "ReactComponent": [Function],
                 "__esModule": true,
-                "default": "heart-white.svg",
+                "default": "heart-black.svg",
               }
             }
           />
@@ -189,7 +189,7 @@ exports[`Section snapshot should match 1`] = `
       </div>
     </article>
     <article
-      className="book"
+      className="bookOnEvenIndex"
     >
       <div
         className="bookImage"
@@ -233,7 +233,7 @@ exports[`Section snapshot should match 1`] = `
       </div>
     </article>
     <article
-      className="book"
+      className="bookOnOddIndex"
     >
       <div
         className="bookImage"
@@ -269,7 +269,7 @@ exports[`Section snapshot should match 1`] = `
               Object {
                 "ReactComponent": [Function],
                 "__esModule": true,
-                "default": "heart-white.svg",
+                "default": "heart-black.svg",
               }
             }
           />
@@ -277,7 +277,7 @@ exports[`Section snapshot should match 1`] = `
       </div>
     </article>
     <article
-      className="book"
+      className="bookOnEvenIndex"
     >
       <div
         className="bookImage"

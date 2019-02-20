@@ -9,10 +9,20 @@
   padding: 0% 9%;
 }
 
-.book{
+.bookOnEvenIndex{
   width:350px;
   margin: 2% 1%;
   background-color: orange;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bookOnOddIndex{
+  width:350px;
+  margin: 2% 1%;
+  background-color: white;
+  color: orange;
   display: flex;
     flex-direction: column;
     justify-content: space-between;

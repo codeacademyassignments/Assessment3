@@ -9,8 +9,8 @@ import './BookGroupByAuthor.component.css';
 class BookGroupByAuthor extends Component {
   createBookCards = (books) => {
     const bookCards = [];
-    books.forEach((book) => {
-      bookCards.push(<Book key={`${book.Name}`} bookId={book.id} liked={book.liked} rating={book.rating} title={book.Name} />);
+    books.forEach((book, index) => {
+      bookCards.push(<Book key={`${book.Name}`} bookId={book.id} liked={book.liked} rating={book.rating} title={book.Name} index={index} />);
     });
     return bookCards;
   }

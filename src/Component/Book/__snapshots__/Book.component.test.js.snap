@@ -2,7 +2,7 @@
 
 exports[`Section snapshot should match 1`] = `
 <article
-  className="book"
+  className="bookOnEvenIndex"
 >
   <div
     className="bookImage"

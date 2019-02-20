@@ -5,8 +5,6 @@ import BookGroupByAuthor from '../BookGroupByAuthor/BookGroupByAuthor.component'
 import './Home.component.css';
 import BookGroupByAuthorHandler from '../../Handler/BooksGroupByAuthor';
 
-// const BookGroupByAuthorHandler = require('../../Handler/BooksGroupByAuthor');
-
 class Home extends Component {
   componentDidMount() {
     const { books, onDataFetched } = this.props;
